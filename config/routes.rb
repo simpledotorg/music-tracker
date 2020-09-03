@@ -1,6 +1,9 @@
 Rails.application.routes.draw do
   devise_for :users
-  resources :albums
-  # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
+  resources :albums do
+    post :favorite, on: :member
+    delete :unfavorite, on: :member
+  end
+
   root to: "home#index"
 end
