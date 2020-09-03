@@ -10,6 +10,15 @@
   </head>
 
   <body>
+    <h1>MusicTracker</h1>
+
+    <nav>
+      <ul>
+        <li><%= link_to "Albums", albums_path %></li>
+        <li><%= link_to "user", "#" %>
+      </ul>
+    </nav>
+
     <%= yield %>
   </body>
 </html>

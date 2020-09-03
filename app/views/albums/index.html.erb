@@ -1,0 +1,8 @@
+
+<% if @albums.none? %>
+  No albums yet!
+<% end %>
+
+<% @albums.each do |album| %>
+  <%= album.title %>
+<% end %>
