@@ -17,8 +17,9 @@ ActiveRecord::Schema.define(version: 2020_09_03_151742) do
 
   create_table "albums", force: :cascade do |t|
     t.string "artist", null: false
-    t.string "genre", null: false
-    t.string "label", null: false
+    t.string "title", null: false
+    t.string "genre"
+    t.string "label"
     t.integer "year"
     t.text "comments"
     t.datetime "created_at", precision: 6, null: false
@@ -37,8 +38,9 @@ ActiveRecord::Schema.define(version: 2020_09_03_151742) do
 
   create_table "track", force: :cascade do |t|
     t.string "artist", null: false
-    t.string "genre", null: false
-    t.string "label", null: false
+    t.string "title", null: false
+    t.string "genre"
+    t.string "label"
     t.integer "year"
     t.text "comments"
     t.bigint "album_id"

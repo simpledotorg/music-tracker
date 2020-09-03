@@ -45,8 +45,9 @@ class InitialSchema < ActiveRecord::Migration[6.0]
 
   create_table(:albums) do |t|
     t.string "artist", null: false
-    t.string "genre", null: false
-    t.string "label", null: false
+    t.string "title", null: false
+    t.string "genre"
+    t.string "label"
     t.integer "year"
     t.text "comments"
     t.timestamps null: false
@@ -54,8 +55,9 @@ class InitialSchema < ActiveRecord::Migration[6.0]
 
   create_table(:track) do |t|
     t.string "artist", null: false
-    t.string "genre", null: false
-    t.string "label", null: false
+    t.string "title", null: false
+    t.string "genre"
+    t.string "label"
     t.integer "year"
     t.text "comments"
     t.belongs_to :album

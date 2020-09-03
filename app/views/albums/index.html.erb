@@ -3,6 +3,8 @@
   No albums yet!
 <% end %>
 
+<%= link_to "Create album", new_album_path %>
+
 <% @albums.each do |album| %>
   <%= album.title %>
 <% end %>
