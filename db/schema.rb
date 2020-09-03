@@ -36,7 +36,7 @@ ActiveRecord::Schema.define(version: 2020_09_03_151742) do
     t.index ["user_id"], name: "index_favorites_on_user_id"
   end
 
-  create_table "track", force: :cascade do |t|
+  create_table "tracks", force: :cascade do |t|
     t.string "artist", null: false
     t.string "title", null: false
     t.string "genre"
@@ -46,7 +46,7 @@ ActiveRecord::Schema.define(version: 2020_09_03_151742) do
     t.bigint "album_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-    t.index ["album_id"], name: "index_track_on_album_id"
+    t.index ["album_id"], name: "index_tracks_on_album_id"
   end
 
   create_table "users", force: :cascade do |t|

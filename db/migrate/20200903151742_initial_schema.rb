@@ -53,7 +53,7 @@ class InitialSchema < ActiveRecord::Migration[6.0]
     t.timestamps null: false
   end
 
-  create_table(:track) do |t|
+  create_table(:tracks) do |t|
     t.string "artist", null: false
     t.string "title", null: false
     t.string "genre"
