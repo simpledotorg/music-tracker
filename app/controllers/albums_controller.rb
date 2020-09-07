@@ -13,7 +13,6 @@ class AlbumsController < ApplicationController
 
   def unfavorite
     album = Album.find(params[:id])
-    p album
     if current_user.favorites.find_by(favoritable: album).destroy
       redirect_to album_path(album), notice: "Removed that from favorites!"
     else
