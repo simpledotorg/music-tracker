@@ -1,24 +1,14 @@
-# README
+# MusicTracker README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is a small Rails 6 app meant for working through pair programming exercises with Simple.org hiring candidates.
+The basic idea of this app is that it would become a small, web based music catalog / tracking application.
+Imagine a vastly simplified version of Spotify or Apple Music on the web.
 
-Things you may want to cover:
 
-* Ruby version
+# How to Setup
 
-* System dependencies
+Requires Postgres, ruby 2.6.5, and yarn.
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+```
+bin/setup
+```
